@@ -5,10 +5,22 @@ const messagesDiv = [];
 const lclStr = JSON.parse(localStorage.getItem("items"));
 const clearBtn = document.getElementById("clear")
 
+
+
+
+
+
+
+
 function printFromLS() {
   lclStr.map((msg) => {
     msgDiv.innerHTML += msg;
   });
+
+  for (let i = 0; i < lclStr.length; i++) {
+    messagesDiv.push(lclStr[i])
+    
+  }
 }
 printFromLS();
 
@@ -81,3 +93,13 @@ function clearAll() {
 clearBtn.addEventListener("click",() => ( clearAll())
  
 );
+
+// this is from chat gpt for auto scroll to botm
+ 
+const container = document.getElementById("messages");
+
+const observer = new MutationObserver(() => {
+  container.scrollTop = container.scrollHeight;
+});
+
+observer.observe(container, { childList: true });

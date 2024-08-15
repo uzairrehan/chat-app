@@ -96,12 +96,11 @@ h4 {
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 8px 18px;
+    padding: 4px 9px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     width: fit-content;
-    word-break: break-word;
     border: 0;
 }
 
@@ -112,11 +111,11 @@ h4 {
     align-items: center;
     gap: 20px;
 }
-.bottom{
+/* .bottom{
     color: #fff ;
     background-color:#00002c ;
     position: fixed;
     bottom: 0px;
     width: 0 auto;
     padding: 20px;
-  }
+  } */
