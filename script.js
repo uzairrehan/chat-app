@@ -3,14 +3,7 @@ const input1 = document.getElementById("input1");
 const input2 = document.getElementById("input2");
 const messagesDiv = [];
 const lclStr = JSON.parse(localStorage.getItem("items"));
-const clearBtn = document.getElementById("clear")
-
-
-
-
-
-
-
+const clearBtn = document.getElementById("clear");
 
 function printFromLS() {
   lclStr.map((msg) => {
@@ -18,8 +11,7 @@ function printFromLS() {
   });
 
   for (let i = 0; i < lclStr.length; i++) {
-    messagesDiv.push(lclStr[i])
-    
+    messagesDiv.push(lclStr[i]);
   }
 }
 printFromLS();
@@ -31,22 +23,22 @@ function send1() {
     msgDiv.innerHTML += `
     <div class="user1">
         <h4>User 1</h4>
-        <div class="user-message">
+        <p class="user-message">
             ${input1.value}
-        </div>  
+        </p>  
         <button class="edit button">edit</button>
-        <button class="delete button">Delete</button>
+        <button class="delete button" onclick="deleteFnc(this)" >Delete</button>
     </div>
     `;
 
     messagesDiv.push(`
     <div class="user1">
         <h4>User 1</h4>
-        <div class="user-message">
+        <p class="user-message">
             ${input1.value}
-        </div>  
+        </p> 
         <button class="edit button">edit</button>
-        <button class="delete button">Delete</button>
+        <button class="delete button" onclick="deleteFnc(this)">Delete</button>
     </div>
     `);
     localStorage.setItem("items", JSON.stringify(messagesDiv));
@@ -61,9 +53,9 @@ function send2() {
     msgDiv.innerHTML += `
     <div class="user2">
         <h4>User 2</h4>
-        <div class="user-message">
+        <p class="user-message">
             ${input2.value}
-        </div>  
+        </p>  
         <button class="edit button">edit</button>
         <button class="delete button">Delete</button>
     </div>
@@ -72,9 +64,9 @@ function send2() {
     messagesDiv.push(`
     <div class="user2">
         <h4>User 2</h4>
-        <div class="user-message">
+        <p class="user-message">
             ${input2.value}
-        </div>  
+        </p>  
         <button class="edit button">edit</button>
         <button class="delete button">Delete</button>
     </div>
@@ -87,19 +79,19 @@ function send2() {
 
 function clearAll() {
   msgDiv.innerHTML = "";
-  localStorage.clear()
+  localStorage.clear();
 }
 
-clearBtn.addEventListener("click",() => ( clearAll())
- 
-);
+clearBtn.addEventListener("click", () => clearAll());
 
-// this is from chat gpt for auto scroll to botm
- 
-const container = document.getElementById("messages");
+function deleteFnc(item) {}
 
-const observer = new MutationObserver(() => {
-  container.scrollTop = container.scrollHeight;
-});
+// // this is from chat gpt for auto scroll to botm
 
-observer.observe(container, { childList: true });
+// const container = document.getElementById("messages");
+
+// const observer = new MutationObserver(() => {
+//   container.scrollTop = container.scrollHeight;
+// });
+
+// observer.observe(container, { childList: true });

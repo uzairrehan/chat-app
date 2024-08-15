@@ -1,116 +1,122 @@
 body,
 html {
-    margin: 0px;
-    padding: 0px;
-    background-color: #00002c;
-    color: #FFFFFF;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  background-color: #00002c;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
-    text-align: center;
-    color: #fff; 
-    margin: 40px;
-    letter-spacing: 8px;
+  text-align: center;
+  color: #fff;
+  margin: 40px;
+  letter-spacing: 8px;
 }
 
 h4 {
-    padding-bottom: 5px;
-    margin: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+  text-align: center;
+}
+
+.user-message {
+  margin: 10px;
 }
 
 .msg-center {
-    text-align: center;
-    margin: 20px;
-    display: flex;
-    gap: 10px;
-    width: auto;
-    justify-content: center;
-    flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #messages {
-    border: 2px solid #008cff;
-    border-radius: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    height: 60vh;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  border: 2px solid #008cff;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  height: 60vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .user1 {
-    max-width: 500px;
-    align-self: flex-start;
-    height: auto;
-    padding: 20px;
+  max-width: 500px;
+  align-self: flex-start;
+  height: auto;
+  padding: 20px;
 
-    border: 2px solid #008cff;
-    border-radius: 20px;
+  border: 2px solid #008cff;
+  border-radius: 20px;
 }
 
 .user2 {
-    max-width: 500px;
-    align-self: flex-end;
-    height: auto;
-    padding: 20px;
+  max-width: 500px;
+  align-self: flex-end;
+  height: auto;
+  padding: 20px;
 
-    border: 2px solid #008cff;
-    border-radius: 20px;
-
+  border: 2px solid #008cff;
+  border-radius: 20px;
 }
 
 .input {
-    color: white;
-    border: 2px solid #008cff;
-    border-radius: 10px;
-    padding: 10px 25px;
-    background: transparent;
-    max-width: 190px;
+  color: white;
+  border: 2px solid #008cff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  max-width: 190px;
 }
 
 .input:active {
-    box-shadow: 2px 2px 15px #008cff inset;
+  box-shadow: 2px 2px 15px #008cff inset;
 }
 
 .messages::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .button {
-    background: #008cff;
-    border-radius: 999px;
-    box-shadow: #008cff 0 10px 20px -10px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    opacity: 1;
-    outline: 0 solid transparent;
-    padding: 4px 9px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: fit-content;
-    border: 0;
+  background: #008cff;
+  border-radius: 999px;
+  box-shadow: #008cff 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 4px 9px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  border: 0;
 }
 
 .msg-center div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
+
 /* .bottom{
     color: #fff ;
     background-color:#00002c ;
