@@ -26,8 +26,6 @@ function send1() {
         <p class="user-message">
             ${input1.value}
         </p>  
-        <button class="edit button">edit</button>
-        <button class="delete button" onclick="deleteFnc(this)" >Delete</button>
     </div>
     `;
 
@@ -37,8 +35,6 @@ function send1() {
         <p class="user-message">
             ${input1.value}
         </p> 
-        <button class="edit button">edit</button>
-        <button class="delete button" onclick="deleteFnc(this)">Delete</button>
     </div>
     `);
     localStorage.setItem("items", JSON.stringify(messagesDiv));
@@ -55,9 +51,7 @@ function send2() {
         <h4>User 2</h4>
         <p class="user-message">
             ${input2.value}
-        </p>  
-        <button class="edit button">edit</button>
-        <button class="delete button">Delete</button>
+        </p>
     </div>
 `;
 
@@ -67,8 +61,6 @@ function send2() {
         <p class="user-message">
             ${input2.value}
         </p>  
-        <button class="edit button">edit</button>
-        <button class="delete button">Delete</button>
     </div>
 `);
     localStorage.setItem("items", JSON.stringify(messagesDiv));
@@ -88,10 +80,10 @@ function deleteFnc(item) {}
 
 // // this is from chat gpt for auto scroll to botm
 
-// const container = document.getElementById("messages");
+const container = document.getElementById("messages");
 
-// const observer = new MutationObserver(() => {
-//   container.scrollTop = container.scrollHeight;
-// });
+const observer = new MutationObserver(() => {
+  container.scrollTop = container.scrollHeight;
+});
 
-// observer.observe(container, { childList: true });
+observer.observe(container, { childList: true });
