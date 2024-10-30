@@ -5,25 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uzair - Chat App</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRRNBrwteobSdgdLv4BoTkJ2POxp8X8uneQ&s"
-      type="image/x-icon"
-    />
   </head>
   <body>
     <header>
       <h1>Chat</h1>
     </header>
     <main>
-      <!-- Messages Section -->
-      <section id="messages" aria-live="polite">
-        <!-- Messages will be dynamically loaded here -->
+      <section id="messages" >
       </section>
 
-      <!-- Message Input Section -->
       <div class="msg-center">
-        <!-- User 1 Input and Send Button -->
         <div>
           <input
             placeholder="Type message for User 1..."
@@ -32,12 +23,12 @@
             id="input1"
             aria-label="User 1 message input"
           />
-          <button id="send1Btn" class="button" role="button" aria-label="Send User 1 message">
+          <button id="send1Btn" class="button" role="button" >
             Send
           </button>
         </div>
 
-        <!-- User 2 Input and Send Button -->
+
         <div>
           <input
             placeholder="Type message for User 2..."
@@ -46,24 +37,19 @@
             id="input2"
             aria-label="User 2 message input"
           />
-          <button id="send2Btn" class="button" role="button" aria-label="Send User 2 message">
+          <button id="send2Btn" class="button" role="button">
             Send
           </button>
         </div>
 
-        <!-- Clear All Messages Button -->
-        <button id="clear" class="button" aria-label="Clear all messages">
+    
+        <button id="clear" class="button">
           Clear All
         </button>
       </div>
     </main>
 
-    <!-- Footer Attribution (optional) -->
-    <!-- <p class="bottom">This site is made with &#9829; by 
-      <b><a href="https://github.com/uzairrehan">Uzair Rehan</a></b>
-    </p> -->
 
-    <!-- Link to JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
