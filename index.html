@@ -12,42 +12,58 @@
     />
   </head>
   <body>
-    <header><h1>Chat</h1></header>
+    <header>
+      <h1>Chat</h1>
+    </header>
     <main>
-      <div id="messages">
-        
-      </div>
+      <!-- Messages Section -->
+      <section id="messages" aria-live="polite">
+        <!-- Messages will be dynamically loaded here -->
+      </section>
+
+      <!-- Message Input Section -->
       <div class="msg-center">
+        <!-- User 1 Input and Send Button -->
         <div>
           <input
-            placeholder="Type User 1...."
+            placeholder="Type message for User 1..."
             class="input"
-            name="text"
             type="text"
             id="input1"
-            name="user1"
+            aria-label="User 1 message input"
           />
-          <button onclick="send1()" class="button" role="button">Send</button>
+          <button id="send1Btn" class="button" role="button" aria-label="Send User 1 message">
+            Send
+          </button>
         </div>
+
+        <!-- User 2 Input and Send Button -->
         <div>
           <input
-            placeholder="Type User 2...."
+            placeholder="Type message for User 2..."
             class="input"
-            name="text"
             type="text"
             id="input2"
-            name="user2"
+            aria-label="User 2 message input"
           />
-          <button onclick="send2()" class="button" role="button">Send</button>
+          <button id="send2Btn" class="button" role="button" aria-label="Send User 2 message">
+            Send
+          </button>
         </div>
-        <button id="clear" class="button">Clear All</button>
+
+        <!-- Clear All Messages Button -->
+        <button id="clear" class="button" aria-label="Clear all messages">
+          Clear All
+        </button>
       </div>
     </main>
-    <!-- <p class="bottom">This Site is made With 	&#9829 By 
-      <b>
-    <a href="https://github.com/uzairrehan">Uzair Rehan</a>
-  </b>
-  </p> -->
+
+    <!-- Footer Attribution (optional) -->
+    <!-- <p class="bottom">This site is made with &#9829; by 
+      <b><a href="https://github.com/uzairrehan">Uzair Rehan</a></b>
+    </p> -->
+
+    <!-- Link to JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
